@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let getData = async () => {
+        //     let resp = await fetch('data.json');
+        //     return resp.json();
+        // }
+        
+        // getData().then((data) => {
+        //     console.log(data);
+        // });
+
+        debugger
+        fetch('data.json')
+        .then(resp => resp.json())
+        .then((resp) => {
+            console.log(resp);
+        });
+
+        function add(x, y) {
+            for(let i = 0; i < 3; i++) {
+                console.log(i + 1);
+            }
+            return x + y;
+        }
+
+        let x = 6;
+        let y = 4;
+        console.log(add(x, y));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
